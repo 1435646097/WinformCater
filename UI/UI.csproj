@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{215284ED-DC51-4718-ADC5-67A17DD9924B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>D:\BaiduNetdiskDownload\04-三层架构与Winform项目—刘歧\20 2015-08-18 餐桌管理 厅包管理 Excel操作\资料\binaryRelease\Release binary\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPinyin">
+      <HintPath>..\..\NPinyin-0.2.4588.20158-bin\NPinyin.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>D:\BaiduNetdiskDownload\04-三层架构与Winform项目—刘歧\20 2015-08-18 餐桌管理 厅包管理 Excel操作\资料\binaryRelease\Release binary\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.DDF">
+      <HintPath>D:\BaiduNetdiskDownload\04-三层架构与Winform项目—刘歧\20 2015-08-18 餐桌管理 厅包管理 Excel操作\资料\binaryRelease\Release binary\NPOI.DDF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.HPSF">
+      <HintPath>D:\BaiduNetdiskDownload\04-三层架构与Winform项目—刘歧\20 2015-08-18 餐桌管理 厅包管理 Excel操作\资料\binaryRelease\Release binary\NPOI.HPSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.HSSF">
+      <HintPath>D:\BaiduNetdiskDownload\04-三层架构与Winform项目—刘歧\20 2015-08-18 餐桌管理 厅包管理 Excel操作\资料\binaryRelease\Release binary\NPOI.HSSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.POIFS">
+      <HintPath>D:\BaiduNetdiskDownload\04-三层架构与Winform项目—刘歧\20 2015-08-18 餐桌管理 厅包管理 Excel操作\资料\binaryRelease\Release binary\NPOI.POIFS.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.Util">
+      <HintPath>D:\BaiduNetdiskDownload\04-三层架构与Winform项目—刘歧\20 2015-08-18 餐桌管理 厅包管理 Excel操作\资料\binaryRelease\Release binary\NPOI.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DishInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DishInfoList.Designer.cs">
+      <DependentUpon>DishInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DishTypeInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DishTypeInfoList.Designer.cs">
+      <DependentUpon>DishTypeInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMian.Designer.cs">
+      <DependentUpon>FormMian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HallInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HallInfoList.Designer.cs">
+      <DependentUpon>HallInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerInfoList.Designer.cs">
+      <DependentUpon>ManagerInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInfoList.Designer.cs">
+      <DependentUpon>MemberInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberTypeInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberTypeInfoList.Designer.cs">
+      <DependentUpon>MemberTypeInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderInfoList.Designer.cs">
+      <DependentUpon>OrderInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderPay.Designer.cs">
+      <DependentUpon>OrderPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableInfoList.Designer.cs">
+      <DependentUpon>TableInfoList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DishInfoList.resx">
+      <DependentUpon>DishInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DishTypeInfoList.resx">
+      <DependentUpon>DishTypeInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMian.resx">
+      <DependentUpon>FormMian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HallInfoList.resx">
+      <DependentUpon>HallInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerInfoList.resx">
+      <DependentUpon>ManagerInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInfoList.resx">
+      <DependentUpon>MemberInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberTypeInfoList.resx">
+      <DependentUpon>MemberTypeInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderInfoList.resx">
+      <DependentUpon>OrderInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderPay.resx">
+      <DependentUpon>OrderPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TableInfoList.resx">
+      <DependentUpon>TableInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bll\Bll.csproj">
+      <Project>{7ac3e370-ceab-4b9f-88fa-a49dc7b19b62}</Project>
+      <Name>Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{6f5eea3e-c439-4e1b-9b9d-ce410d01ebaf}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{1cd68da2-f5bd-4a95-84a7-a89e798cccba}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuBg.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuDish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuManager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuMember.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuOrder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuQuit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuTable.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
